@@ -25,22 +25,25 @@ Se le solicita registrar las operaciones del día y elaborar los estados financi
     },
 
     "HT2 - Second Chance": {
-        "empresa": "Second Chance",
-        "descripcion": """Se decide poner en marcha una lavandería que operará durante un día completo. 
-Durante la jornada se realizan compras de insumos, gastos operativos y se prestan servicios tanto al contado como al crédito.
+    "empresa": "Second Chance",
+    "descripcion": """Se inicia la operación de una lavandería durante el día. 
+Se realizan compras de materiales, contratación de servicios, gastos operativos 
+y generación de ingresos tanto al contado como al crédito.
 
-Algunas obligaciones quedarán pendientes de pago al final del día, por lo que deberán reconocerse adecuadamente 
-en los registros contables.
-
-Se le solicita registrar todas las operaciones y preparar los estados financieros básicos.""",
-        "tx": [
-            "1. Se realiza un aporte inicial de capital por Q5,000, depositado en el banco.",
-            "2. Se compran materiales para el lavado de ropa por Q1,000 al contado.",
-            "3. Se contrata el uso de un local por Q200, monto que será pagado al día siguiente (cuenta por pagar).",
-            "4. Se paga publicidad por Q100 en efectivo.",
-            "5. Durante el día se generan ingresos por Q1,125, de los cuales una parte corresponde a ventas al contado y otra a crédito."
-        ]
-    },
+Al final del día, se debe determinar el resultado de la operación, la situación financiera 
+y el flujo de efectivo de la empresa.""",
+    "tx": [
+        "1. Aporte inicial a la empresa por Q5,000, depositados en Banco de la Lavandería.",
+        "2. Compra de materiales para lavado de ropa al contado, por Q1,000.",
+        "3. Contratación de un local equipado para ser utilizado el día de hoy por Q200. La renta se pagará el día de mañana.",
+        "4. Publicación de un pequeño volante anunciando la lavandería, pagado al contado por Q100.",
+        "5. En el día se lavaron las siguientes prendas:",
+        "   - 20 pantalones a Q15 c/u (contado)",
+        "   - 25 camisas a Q10 c/u (contado)",
+        "   - 10 blusas a Q12.50 c/u (crédito)",
+        "6. Conteo de materiales sobrantes al final del día: Q700."
+    ]
+},
 
     "HT3 - Café Productivo": {
         "empresa": "Café Productivo",
