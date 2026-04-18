@@ -151,8 +151,8 @@ with col1:
 with col2:
     st.markdown("### ER")
     st.number_input("Ingresos", key="er_ingresos")
-    st.number_input("Materiales", key="er_materiales")
-    st.number_input("Alquiler", key="er_alquiler")
+    st.number_input("Gastos 1", key="er_materiales")
+    st.number_input("Gastos 2", key="er_alquiler")
     st.success(f"{st.session_state.utilidad:.2f}")
 
 # EVPN
