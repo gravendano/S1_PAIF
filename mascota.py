@@ -273,3 +273,15 @@ if st.button("Descargar Excel"):
     )
 
 st.success(f"Flujo de efectivo: {s.efe_flujo_neto:.2f}")
+
+# =========================
+# LIMPIAR HOJA
+# =========================
+st.markdown("### Reiniciar hoja")
+
+if st.button("Limpiar todos los datos"):
+
+    for k in list(st.session_state.keys()):
+        del st.session_state[k]
+
+    st.rerun()
