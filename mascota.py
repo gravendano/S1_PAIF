@@ -18,7 +18,7 @@ Asimismo, los materiales utilizados durante la jornada serán pagados hasta el d
 Se le solicita registrar las operaciones del día y elaborar los estados financieros correspondientes.""",
         "tx": [
             "1. Se inicia la operación con un aporte de capital de Q100.",
-            "2. Durante el día se lavan 8 mascotas a razón de Q50 cada una, cobrando el servicio de forma inmediata.",
+            "2. Durante el día se lavan 8 mascotas a razón de Q50 cada una, cobrando solamente un servicio de forma inmediata.",
             "3. Al finalizar la jornada, se paga la renta del equipo por Q100.",
             "4. Se registra el consumo de materiales utilizados, equivalente a Q80, los cuales serán pagados el día de mañana (cuenta por pagar)."
         ]
