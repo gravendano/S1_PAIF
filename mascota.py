@@ -8,39 +8,55 @@ st.set_page_config(page_title="PAIF ContaLab", page_icon="📘", layout="wide")
 CASES = {
     "HT1 - La Mascota Alegre": {
         "empresa": "La Mascota Alegre",
-        "descripcion": """El día de hoy Usted le habla a un amigo para que le rente por día un equipo para lavado de mascotas, 
-y que le dé en consignación un lote de materiales para el lavado de mascotas. 
-Su amigo acepta la propuesta y convienen que al final del día Usted le pagará la renta del equipo de Q100. 
-El consumo de materiales se pagará el día de mañana.""",
+        "descripcion": """El día de hoy Usted decide iniciar la operación de un servicio de lavado de mascotas. 
+Para ello, contacta a un amigo que le renta por un día un equipo especializado y además le entrega en consignación 
+los materiales necesarios para realizar los lavados.
+
+Ambos acuerdan que la renta del equipo se pagará al final del día por un monto de Q100. 
+Asimismo, los materiales utilizados durante la jornada serán pagados hasta el día siguiente.
+
+Se le solicita registrar las operaciones del día y elaborar los estados financieros correspondientes.""",
         "tx": [
             "1. Se inicia la operación con un aporte de capital de Q100.",
-            "2. Se lavan 8 mascotas a Q50 c/u, cobro inmediato.",
-            "3. Se paga la renta del equipo Q100.",
-            "4. Se consumen materiales Q80 (se pagan mañana)."
+            "2. Durante el día se lavan 8 mascotas a razón de Q50 cada una, cobrando el servicio de forma inmediata.",
+            "3. Al finalizar la jornada, se paga la renta del equipo por Q100.",
+            "4. Se registra el consumo de materiales utilizados, equivalente a Q80, los cuales serán pagados el día de mañana (cuenta por pagar)."
         ]
     },
+
     "HT2 - Second Chance": {
         "empresa": "Second Chance",
-        "descripcion": """Se inicia una lavandería que operará durante un día. 
-Se realizan gastos, compras y servicios tanto al contado como al crédito.""",
+        "descripcion": """Se decide poner en marcha una lavandería que operará durante un día completo. 
+Durante la jornada se realizan compras de insumos, gastos operativos y se prestan servicios tanto al contado como al crédito.
+
+Algunas obligaciones quedarán pendientes de pago al final del día, por lo que deberán reconocerse adecuadamente 
+en los registros contables.
+
+Se le solicita registrar todas las operaciones y preparar los estados financieros básicos.""",
         "tx": [
-            "1. Aporte inicial Q5,000.",
-            "2. Compra de materiales Q1,000 al contado.",
-            "3. Renta Q200 (se paga mañana).",
-            "4. Publicidad Q100.",
-            "5. Ingresos Q1,125."
+            "1. Se realiza un aporte inicial de capital por Q5,000, depositado en el banco.",
+            "2. Se compran materiales para el lavado de ropa por Q1,000 al contado.",
+            "3. Se contrata el uso de un local por Q200, monto que será pagado al día siguiente (cuenta por pagar).",
+            "4. Se paga publicidad por Q100 en efectivo.",
+            "5. Durante el día se generan ingresos por Q1,125, de los cuales una parte corresponde a ventas al contado y otra a crédito."
         ]
     },
+
     "HT3 - Café Productivo": {
         "empresa": "Café Productivo",
-        "descripcion": """Se presta asesoría técnica a productores de café durante el día. 
-Algunos ingresos son al contado y otros quedan pendientes.""",
+        "descripcion": """Se inicia la operación de un servicio de asesoría técnica para productores de café. 
+Durante el día se prestan servicios, se generan ingresos tanto cobrados como pendientes, 
+y se incurre en distintos gastos necesarios para la operación.
+
+Al cierre del día, existen obligaciones pendientes de pago que deben reconocerse como pasivos.
+
+Se le solicita registrar las operaciones del día y elaborar los estados financieros correspondientes.""",
         "tx": [
-            "1. Aporte Q3,000.",
-            "2. Ingresos Q2,500.",
-            "3. CxC Q1,800.",
-            "4. Gastos Q700.",
-            "5. CxP Q600."
+            "1. Se realiza un aporte inicial de capital por Q3,000.",
+            "2. Se generan ingresos por servicios prestados y cobrados en efectivo por Q2,500.",
+            "3. Se registran ingresos adicionales por Q1,800 que aún no han sido cobrados (cuentas por cobrar).",
+            "4. Se pagan gastos operativos por Q700.",
+            "5. Se registran gastos por Q600 que serán pagados posteriormente (cuentas por pagar)."
         ]
     }
 }
@@ -124,8 +140,8 @@ with col1:
     st.markdown("### Chequera")
     st.number_input("Aporte", key="t1")
     st.number_input("Ingresos", key="t2")
-    st.number_input("Renta", key="t3")
-    st.number_input("Materiales", key="t4")
+    st.number_input("Gastos 1", key="t3")
+    st.number_input("Gastos 2", key="t4")
     st.success(f"{st.session_state.chequera:.2f}")
 
 # ER
